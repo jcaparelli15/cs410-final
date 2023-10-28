@@ -1,0 +1,9 @@
+Joe Caparelli Project Proposal
+
+1.Joseph Caparelli, jcc12
+2. I've chosen to enhance metapy by making it support python 3.7 and 3.8.  I likely will also update metapy to integrate with NLTK.
+3. I will mostly just be porting over code to make it python 3.x compatible and integrating it with various platforms
+4. I will write tests to assure all functionality is retained accross versions
+5. By updating the source of metapy
+6. Python
+7. This will easily be 20+ hours of work.
