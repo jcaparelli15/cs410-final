@@ -1,0 +1,14 @@
+Current Progress made so far:
+I haven't dedicated a ton of time on this as I've been busy with lectures, other classes, and work but so far I have done the following:
+a) Stepped through Meta Toolkit C++ implementation and python 
+b) Identifified incompattible dependencies and code sections
+c) Begun resolving some of these incompatabilities
+
+Remaining Tasks:
+a) Write tests assuring compatibility
+b) Finish resolving all incompatabilities
+c) Integrate with NTLK
+d) Create a demo/tutorial for the new installation process
+
+Challenges faced:
+This is a fairly straight forward project so there hasn't been a ton of issues so far.  The main challenge I have face is maintaing two development environments for different versions of python.  Another tricky aspect has been familarizing myself with C++.  I'm sure more challenges will arise as I spend more time on this project but at the moment it has been going fine.
