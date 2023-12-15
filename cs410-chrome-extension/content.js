@@ -11,8 +11,8 @@ const B_HYPERPARAM = .75
 const K1_HYPERPARAM = 1.2
 
 chrome.runtime.onMessage.addListener(msgObj => {
-    for (let i = 0; i < docs.length; i++) {
-      docs[i].style.color = "black";
+    for (let i = 0; i < documents.length; i++) {
+      documents[i].style.color = "black";
     }
     let doc = getBestDoc(msgObj.text, documents, B_HYPERPARAM, K1_HYPERPARAM)
     doc.scrollIntoView({behavior: 'smooth'})

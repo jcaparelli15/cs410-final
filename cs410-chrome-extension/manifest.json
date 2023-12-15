@@ -17,7 +17,7 @@
     {
       "js": ["content.js"],
       "matches": [
-        "https://en.wikipedia.org/wiki/*",
+        "https://en.wikipedia.org/wiki/*"
         ]
     }
   ]
