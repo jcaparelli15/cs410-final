@@ -1,19 +1,19 @@
-#####Welcome to the PowerSearch Github repo.  
+##### Welcome to the PowerSearch Github repo.  
 This project was designed as the final project for CS410.  All development was done by Joe Caparelli (jcc12@illinois.edu)
 
 This document will provide to give a general overview of the tool, some implementation details, installation instruction, along with suggestions for future improvements.
 
-###Overview of PowerSearch
+### Overview of PowerSearch
 
 PowerSearch is a chrome extension that allows the user to better search Wikipedia articles.  While it can likely be applied to other webpages, the tool assumes the same html structure as a wikipedia article. Using PowerSearch, a user can query a wikipedia article for a phrase or term and be linked to the most relevant paragraph of the document.  Inherently, this is much more powerful than simply cmd-F'ing a term as that relies on an exact matc whereas powersearch operates similarly to how you could query a search engine.  Additionally, for topics with lots of matches it could unclear which is the most relevant.  PowerSearch solves this by utilizing BM25 to rank the documents structure.
 
-###Implementation Details
+### Implementation Details
 
 Powersearch is powered by BM25.  In this sense it treats a paragraph of the wikipedia article as a document.  BM25 uses Term Frequency and Inverse Document Frequency to generate scores for each document in the collection.  More information can be found here on BM25 https://en.wikipedia.org/wiki/Okapi_BM25.  This implementation uses the default BM25 values with k1 set to and b set to .  
 
 This document uses a Chrome Extension to operate.  Chrome Extension have the following structure.  First a manifest.json file that specifies the artifacts and which websites your extension can run on.  Next, an images folder filled with icons for your application to use (I simply used some defaults provided by Chrome's documentation).  This also includes a content script.  This file content.js contains the document processing.  This runs on the document open in the current window and computes the BM25 function.  This file contains various helper functions to do this computation as well.  As such, their documentation can be found inline in the source code with more detailed comments.  Please refer to this.  Finally, the remaining aspects concern the popup window which allows users to input their query.  The popup html and css file specify its structure and style elements.  The popup.js file specifies its logic and handles communicating between the two scripts.  This script will send a message on form completion to the background script.  The background script has a listener configured that when it receives a message it processes this as a query and highlights and navigates to the most relevant section of the article.  
 
-###Installation Instructions
+### Installation Instructions
 
 In order to install follow these steps.
 
