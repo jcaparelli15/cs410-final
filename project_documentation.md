@@ -31,5 +31,5 @@ In order to install follow these steps.
 ### Future Work
 First and foremost, I am not much of a ux-designer as you can likely tell.  One way to improve this implementation would be to update this plugin to be more aesthetically pleasing.
 Next, there is an open issue that I was unable to resolve in time (I spent well over 20 hours on this project so I wasn't able to resolve this in time) relating to the plugin.  If a user does not press the submit button and instead hits enter on their keyboard no action is taken.  Resolving this bug would likely improve the user experience
-Third, this plugin primarily works on wikipedia.  Updating it to be more generic and work on additional sites would likely prove difficult but could be a rewarding experience. This would require a better method of text extraction that relying on <p> tags
-Finally, this plugin only extracts text from the <p> tags.  Updating this to handle additional data sources or supporting additional ranking algorithms would be a great next step.  
+Third, this plugin primarily works on wikipedia.  Updating it to be more generic and work on additional sites would likely prove difficult but could be a rewarding experience. This would require a better method of text extraction that relying on paragraph tags
+Finally, this plugin only extracts text from the paragraph tags.  Updating this to handle additional data sources or supporting additional ranking algorithms would be a great next step.  
